@@ -1,5 +1,6 @@
 .start{
     color: palevioletred;
+    text-shadow: 2px 2px 5px rgb(241, 130, 195);
 }
 body {
 
@@ -44,4 +45,9 @@ button {
 
 button:hover {
     background-color: orange;
+}
+.hh{
+    color: blue;
+    text-shadow: 2px 2px 5px gray;
+    font-size: 25px;
 }

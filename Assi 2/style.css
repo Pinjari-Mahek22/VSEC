@@ -1,0 +1,357 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+    background: linear-gradient(
+        to right,
+        #ffe4ec,
+        #fff0f5
+    );
+
+    color: #333;
+}
+
+
+/* Main Heading */
+.start {
+    color: palevioletred;
+    font-size: 30px;
+
+    text-shadow:
+        2px 2px 5px gray;
+
+    margin-bottom: 5px;
+}
+
+
+/* Header */
+header {
+    padding: 20px;
+}
+
+
+/* Navigation Bar */
+nav {
+    background-color: palevioletred;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+    margin: 0 20px;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+
+/* Home */
+.home {
+    padding: 30px;
+}
+
+.home h2 {
+    color: palevioletred;
+}
+
+.welcome {
+    color: blue;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    text-shadow: 1px 1px 3px gray;
+
+    margin-top: 20px;
+}
+
+
+/* Section Heading */
+.section-title {
+    color: palevioletred;
+
+    text-shadow:
+        1px 1px 3px gray;
+
+    margin-top: 35px;
+}
+
+
+/* =========================
+   FLOWER CARDS
+   ========================= */
+
+.Products {
+
+    /* MOST IMPORTANT */
+    display: flex;
+
+    /* Cards side by side */
+    flex-direction: row;
+
+    /* Center all cards */
+    justify-content: center;
+
+    /* Keep equal gap */
+    gap: 20px;
+
+    /* Full width */
+    width: 100%;
+
+    /* Prevent wrapping */
+    flex-wrap: nowrap;
+
+    margin-top: 25px;
+}
+
+
+/* Individual Card */
+.card {
+
+    /* Fixed width */
+    width: 160px;
+
+    /* Same height */
+    min-height: 150px;
+
+    background-color: white;
+
+    border: 1px solid #ccc;
+
+    border-radius: 12px;
+
+    padding: 12px;
+
+    box-sizing: border-box;
+
+    /* Card shadow */
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.15);
+
+    transition: 0.3s;
+}
+
+
+/* Card Hover */
+.card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Flower Image */
+.card img {
+
+    width: 100%;
+
+    height: 170px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+}
+
+
+/* Card Heading */
+.card h3 {
+    color: palevioletred;
+    font-size: 20px;
+}
+
+
+/* Card Price */
+.card h4 {
+    color: green;
+
+    font-size: 20px;
+}
+
+
+/* Buttons */
+button {
+
+    background-color: green;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+/* Button Hover */
+button:hover {
+    background-color: orange;
+}
+
+
+/* About Section */
+.about {
+    padding: 40px;
+}
+
+
+/* =========================
+   PRICE TABLE
+   ========================= */
+
+table {
+
+    width: 70%;
+
+    margin: 25px auto;
+
+    border-collapse: collapse;
+
+    background-color: white;
+}
+
+
+th,
+td {
+
+    border: 1px solid #999;
+
+    padding: 12px;
+}
+
+
+th {
+
+    background-color: palevioletred;
+
+    color: white;
+}
+
+
+tr:hover {
+
+    background-color: #ffe4ec;
+}
+
+
+/* =========================
+   ORDER FORM
+   ========================= */
+
+form {
+
+    width: 500px;
+
+    max-width: 90%;
+
+    margin: 25px auto;
+
+    padding: 25px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.15);
+
+    text-align: left;
+}
+
+
+form label {
+
+    display: block;
+
+    margin-top: 12px;
+
+    margin-bottom: 5px;
+
+    font-weight: bold;
+
+    color: palevioletred;
+}
+
+
+form input,
+form select,
+form textarea {
+
+    width: 100%;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+}
+
+
+form button {
+
+    display: block;
+
+    margin: 20px auto 0;
+}
+
+
+/* Footer */
+footer {
+
+    background-color: palevioletred;
+
+    color: white;
+
+    padding: 15px;
+
+    margin-top: 40px;
+}
+
+
+/* =========================
+   MOBILE VIEW
+   ========================= */
+
+@media (max-width: 950px) {
+
+    .Products {
+
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .start {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    .Products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
